@@ -15,7 +15,6 @@ const Form = () => {
   const [resValues, setResValues] = useState(INITIAL_RESULT);
 
   const handleChange = (name, value) => {
-    console.log(name, value, "here");
     setCurrValues({ ...currValues, [name]: value });
   };
 
@@ -24,7 +23,7 @@ const Form = () => {
 
     setResValues(res);
   }, [currValues]);
-  console.log(currValues);
+
   return (
     <div className="form">
       <div className="formUpperDiv">

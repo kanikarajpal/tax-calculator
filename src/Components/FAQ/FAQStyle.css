@@ -3,7 +3,7 @@
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   border-radius: 1rem;
 }
 .faqHeading {
@@ -17,6 +17,8 @@
   flex-direction: column;
   gap: 0.6rem;
   line-height: 160%;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--horizontal-bar);
 }
 
 .faqQues {
