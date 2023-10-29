@@ -1,0 +1,34 @@
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background: var(--white);
+  border-radius: 1rem;
+  padding: 6% 12%;
+}
+.leftParentContainer {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.leftDivHeading {
+  font-size: var(--xxl);
+  font-weight: var(--bold);
+  text-align: center;
+  color: var(--primary-text);
+  line-height: 2.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .leftParentContainer {
+    width: 100%;
+  }
+  .leftContainer {
+    padding: 1rem 1rem;
+    gap: 1.5rem;
+  }
+  .leftDivHeading {
+    font-size: 1.5rem;
+  }
+}

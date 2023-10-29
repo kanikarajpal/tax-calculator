@@ -1,0 +1,182 @@
+select,
+option,
+.input {
+  border-radius: 0.5rem;
+  padding: 1rem 0rem;
+  font-size: var(--lg);
+  font-weight: var(--normal);
+  color: var(--primary-text);
+  background: var(--bg-color-grey);
+  cursor: pointer;
+  justify-content: space-between;
+  border: none;
+  width: 100%;
+  display: flex;
+}
+
+label {
+  font-size: var(--medium);
+  font-weight: var(--default);
+  line-height: 1.5rem;
+}
+
+.formUpperDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1.75rem 2.5rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--horizontal-bar);
+}
+
+.formItem,
+.inputDiv {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.inputDiv {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.formLowerDiv {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 1.75rem 0rem;
+  gap: 2.5rem;
+}
+
+.inputDiv::before {
+  content: "$";
+  position: absolute;
+  padding: 2.9rem 1rem;
+}
+
+.inputDiv {
+  position: relative;
+}
+
+.input {
+  padding-left: 2rem;
+  width: -webkit-fill-available;
+}
+
+.resultDiv,
+.lower {
+  padding: 0.75rem 0rem;
+  background-color: var(--bg-color-green);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+}
+
+.resultUpperDiv {
+  color: var(--primary-text);
+  text-align: center;
+  font-weight: var(--normal);
+}
+
+.resultLowerDiv,
+.lowerBlue {
+  color: var(--green);
+  text-align: center;
+  font-size: var(--xl);
+  font-weight: var(--bold);
+}
+.lowerBlue {
+  color: var(--dark-blue);
+}
+.lower {
+  background-color: var(--bg-color-light-blue);
+}
+.investmentTypeDiv {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.shortDiv {
+  width: -webkit-fill-available;
+}
+.typeDiv {
+  display: flex;
+  gap: 0.6rem;
+}
+.inputContainer {
+  display: flex;
+  padding: 0.4rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--secondary-text);
+  color: var(--secondary-text);
+  width: -webkit-fill-available;
+  font-size: 18px;
+  background-color: var(--white);
+  font-weight: var(--normal);
+  height: 3rem;
+}
+.taxHeading {
+  color: var(--secondary-text);
+}
+.shortText {
+  padding-top: 0.4rem;
+}
+.taxDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 14px;
+  padding-bottom: 0.5rem;
+}
+.taxText {
+  font-weight: var(--normal);
+}
+
+.tickIcon {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--dark-blue);
+}
+
+.activeTermDiv {
+  border: 2px solid rgba(var(--bg-color-dark-blue), 1);
+  color: rgba(var(--bg-color-dark-blue), 1);
+  background: rgba(var(--bg-color-dark-blue), 0.06);
+}
+
+input:focus,
+input:active,
+select:focus,
+select:active {
+  outline: none;
+}
+
+.select {
+  background-image: url("../../assets/australia.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 2rem;
+}
+.label {
+  min-width: 6.8rem;
+}
+.inputWrapper {
+  padding: 0rem 0.75rem;
+  background: var(--bg-color-grey);
+  border-radius: 0.5rem;
+  width: -webkit-fill-available;
+}
+
+@media screen and (max-width: 750px) {
+  .formUpperDiv {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .formLowerDiv {
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+}

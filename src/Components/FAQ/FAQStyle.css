@@ -1,0 +1,42 @@
+.FAQdiv {
+  padding: 1.5rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 1rem;
+}
+.faqHeading {
+  color: var(--primary-text);
+  font-size: 30px;
+  font-weight: var(--bold);
+  padding: 0.5rem 0rem;
+}
+.faqDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  line-height: 160%;
+}
+
+.faqQues {
+  color: var(--primary-text);
+  font-size: 1.25rem;
+  font-weight: var(--bold);
+}
+
+.answerDiv {
+  color: var(--secondary-text);
+  font-size: 1rem;
+  font-weight: var(--normal);
+}
+.list {
+  padding-left: 1.5rem;
+  color: var(--primary-text);
+}
+.bulletHeading {
+  font-weight: var(--bold);
+}
+li {
+  padding-bottom: 0.5rem;
+}

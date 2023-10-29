@@ -1,0 +1,63 @@
+.rightContainer {
+  width: 35%;
+  background-color: rgba(var(--bg-color-dark-blue), 1);
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: fit-content;
+  border-radius: 0.5rem;
+}
+
+.rightUpperDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--xl);
+  font-weight: var(--bold);
+  color: var(--white);
+}
+
+.rightDivHeading {
+  width: 70%;
+  text-align: center;
+}
+.rightDivText {
+  color: var(--dull-white);
+
+  text-align: center;
+
+  font-size: 14px;
+  width: 85%;
+  font-weight: var(--normal);
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.5rem;
+
+  color: var(--primary-text);
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.iconDiv {
+  display: flex;
+  margin-left: 0.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .rightContainer {
+    display: none;
+  }
+}
